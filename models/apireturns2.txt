@@ -1,0 +1,273 @@
+ ===============================================
+                    ** Model reporting   **               
+
+===============================================
+
+ Result of routing prediction 
+F1 score is [1 1 1 0 1]
+===============================================
+
+Results of routing scoring 0.7499999999999999
+===============================================
+
+ Result of summary stats 
+     mean  median          std
+0    76.6    34.0    96.139482
+1  3100.4   675.0  5232.801907
+2   227.2    25.0   433.713846
+===============================================
+
+ Result of execution time 
+[
+    0.3356484999999907,
+    0.7904786249999916
+]
+ Result of missing percentage 
+[
+    {
+        "corporation": 0.0
+    },
+    {
+        "lastmonth_activity": 0.0
+    },
+    {
+        "lastyear_activity": 0.0
+    },
+    {
+        "number_of_employees": 0.0
+    },
+    {
+        "exited": 0.0
+    }
+]
+ Result of outdated list 
+Package                  Version   Latest      Type
+------------------------ --------- ----------- -----
+aiohttp                  3.8.1     3.8.3       wheel
+anyio                    3.5.0     3.6.2       wheel
+applaunchservices        0.2.1     0.3.0       wheel
+appnope                  0.1.2     0.1.3       wheel
+appscript                1.1.2     1.2.1       wheel
+arrow                    1.2.2     1.2.3       wheel
+astroid                  2.6.6     2.12.12     wheel
+astropy                  5.0.4     5.1.1       wheel
+asttokens                2.0.5     2.0.8       wheel
+async-timeout            4.0.1     4.0.2       wheel
+atomicwrites             1.4.0     1.4.1       sdist
+attrs                    21.4.0    22.1.0      wheel
+Automat                  20.2.0    22.10.0     wheel
+autopep8                 1.6.0     2.0.0       wheel
+Babel                    2.9.1     2.10.3      wheel
+bcrypt                   3.2.0     4.0.1       wheel
+bitarray                 2.4.1     2.6.0       wheel
+black                    19.10b0   22.10.0     wheel
+bleach                   4.1.0     5.0.1       wheel
+bokeh                    2.4.2     2.4.3       wheel
+boto3                    1.21.32   1.25.4      wheel
+botocore                 1.24.32   1.28.4      wheel
+Bottleneck               1.3.4     1.3.5       sdist
+cachetools               4.2.2     5.2.0       wheel
+certifi                  2021.10.8 2022.9.24   wheel
+cffi                     1.15.0    1.15.1      wheel
+chardet                  4.0.0     5.0.0       wheel
+charset-normalizer       2.0.4     3.0.0       wheel
+click                    8.0.4     8.1.3       wheel
+cloudpickle              2.0.0     2.2.0       wheel
+colorama                 0.4.4     0.4.6       wheel
+colorcet                 2.0.6     3.0.1       wheel
+cookiecutter             1.7.3     2.1.1       wheel
+cryptography             3.4.7     38.0.1      wheel
+cssselect                1.1.0     1.2.0       wheel
+Cython                   0.29.28   0.29.32     wheel
+cytoolz                  0.11.0    0.12.0      wheel
+dask                     2022.2.1  2022.10.1   wheel
+databricks-cli           0.17.1    0.17.3      sdist
+datashader               0.13.0    0.14.2      wheel
+debugpy                  1.5.1     1.6.3       wheel
+distributed              2022.2.1  2022.10.1   wheel
+docker                   5.0.3     6.0.0       wheel
+docutils                 0.17.1    0.19        wheel
+executing                0.8.3     1.1.1       wheel
+fastjsonschema           2.15.1    2.16.2      wheel
+filelock                 3.6.0     3.8.0       wheel
+flake8                   3.9.2     5.0.4       wheel
+Flask                    2.1.3     2.2.2       wheel
+fonttools                4.25.0    4.38.0      wheel
+frozenlist               1.2.0     1.3.1       wheel
+fsspec                   2022.2.0  2022.10.0   wheel
+gensim                   4.1.2     4.2.0       sdist
+GitPython                3.1.27    3.1.29      wheel
+google-api-core          1.25.1    2.10.2      wheel
+google-auth              1.33.0    2.13.0      wheel
+google-cloud-core        1.7.1     2.3.2       wheel
+google-cloud-storage     1.31.0    2.5.0       wheel
+google-crc32c            1.1.2     1.5.0       wheel
+google-resumable-media   1.3.1     2.4.0       wheel
+googleapis-common-protos 1.53.0    1.56.4      wheel
+greenlet                 1.1.0     1.1.3.post0 sdist
+grpcio                   1.42.0    1.50.0      sdist
+h5py                     3.6.0     3.7.0       wheel
+holoviews                1.14.8    1.15.1      wheel
+hvplot                   0.7.3     0.8.1       wheel
+idna                     3.3       3.4         wheel
+imagecodecs              2021.8.26 2022.9.26   sdist
+imageio                  2.9.0     2.22.2      wheel
+imagesize                1.3.0     1.4.1       wheel
+importlib-metadata       4.11.3    5.0.0       wheel
+incremental              21.3.0    22.10.0     wheel
+intake                   0.6.5     0.6.6       wheel
+ipykernel                6.9.1     6.16.2      wheel
+ipython                  8.2.0     8.5.0       wheel
+ipywidgets               7.6.5     8.0.2       wheel
+isort                    5.9.3     5.10.1      wheel
+itemadapter              0.3.0     0.7.0       wheel
+itemloaders              1.0.4     1.0.6       wheel
+itsdangerous             2.0.1     2.1.2       wheel
+jmespath                 0.10.0    1.0.1       wheel
+joblib                   1.1.0     1.2.0       wheel
+json5                    0.9.6     0.9.10      wheel
+jsonschema               4.4.0     4.16.0      wheel
+jupyter-client           6.1.12    7.4.4       wheel
+jupyter-console          6.4.0     6.4.4       wheel
+jupyter-core             4.9.2     4.11.2      wheel
+jupyter-server           1.13.5    1.21.0      wheel
+jupyterlab               3.3.2     3.5.0       wheel
+jupyterlab-pygments      0.1.2     0.2.2       wheel
+jupyterlab-server        2.10.3    2.16.1      wheel
+jupyterlab-widgets       1.0.0     3.0.3       wheel
+keyring                  23.4.0    23.9.3      wheel
+kiwisolver               1.3.2     1.4.4       wheel
+lazy-object-proxy        1.6.0     1.8.0       sdist
+libarchive-c             2.9       4.0         wheel
+llvmlite                 0.38.0    0.39.1      wheel
+locket                   0.2.1     1.0.0       wheel
+lxml                     4.8.0     4.9.1       sdist
+lz4                      3.1.3     4.0.2       sdist
+Mako                     1.2.1     1.2.3       wheel
+Markdown                 3.3.4     3.4.1       wheel
+MarkupSafe               2.0.1     2.1.1       wheel
+matplotlib               3.5.1     3.6.1       wheel
+matplotlib-inline        0.1.2     0.1.6       wheel
+mccabe                   0.6.1     0.7.0       wheel
+mistune                  0.8.4     2.0.4       wheel
+mlflow                   1.27.0    1.30.0      wheel
+msgpack                  1.0.2     1.0.4       wheel
+multidict                5.2.0     6.0.2       wheel
+nbclassic                0.3.5     0.4.7       wheel
+nbclient                 0.5.13    0.7.0       wheel
+nbconvert                6.4.4     7.2.3       wheel
+nbformat                 5.3.0     5.7.0       wheel
+nest-asyncio             1.5.5     1.5.6       wheel
+networkx                 2.7.1     2.8.7       wheel
+notebook                 6.4.8     6.5.1       wheel
+numba                    0.55.1    0.56.3      wheel
+numexpr                  2.8.1     2.8.4       wheel
+numpy                    1.21.5    1.23.4      wheel
+numpydoc                 1.2       1.5.0       wheel
+oauthlib                 3.2.0     3.2.2       wheel
+openpyxl                 3.0.9     3.0.10      wheel
+pandas                   1.4.2     1.5.1       wheel
+panel                    0.13.0    0.14.0      wheel
+param                    1.12.0    1.12.2      wheel
+partd                    1.2.0     1.3.0       wheel
+pathspec                 0.7.0     0.10.1      wheel
+patsy                    0.5.2     0.5.3       wheel
+Pillow                   9.0.1     9.2.0       wheel
+pip                      21.2.4    22.3        wheel
+pkginfo                  1.8.2     1.8.3       wheel
+platformdirs             2.4.0     2.5.2       wheel
+plotly                   5.6.0     5.11.0      wheel
+prometheus-client        0.13.1    0.15.0      wheel
+prompt-toolkit           3.0.20    3.0.31      wheel
+Protego                  0.1.16    0.2.1       wheel
+protobuf                 3.19.1    4.21.9      wheel
+psutil                   5.8.0     5.9.3       wheel
+pycodestyle              2.7.0     2.9.1       wheel
+pyct                     0.4.6     0.4.8       wheel
+pycurl                   7.43.0.6  7.45.1      sdist
+PyDispatcher             2.0.5     2.0.6       sdist
+pyerfa                   2.0.0     2.0.0.1     sdist
+pyflakes                 2.3.1     2.5.0       wheel
+Pygments                 2.11.2    2.13.0      wheel
+PyHamcrest               2.0.2     2.0.4       wheel
+PyJWT                    2.4.0     2.6.0       wheel
+pylint                   2.9.6     2.15.5      wheel
+pyodbc                   4.0.32    4.0.34      sdist
+pyOpenSSL                21.0.0    22.1.0      wheel
+pyparsing                3.0.4     3.0.9       wheel
+PyQt5                    5.15.2    5.15.7      sdist
+PyQt5_sip                4.19.25   12.11.0     wheel
+PyQtChart                5.15.2    5.15.6      sdist
+pyrsistent               0.18.0    0.18.1      wheel
+pytest                   7.1.1     7.2.0       wheel
+python-lsp-black         1.0.0     1.2.1       wheel
+python-lsp-server        1.2.4     1.5.0       wheel
+python-slugify           5.0.2     6.1.2       wheel
+python-snappy            0.6.0     0.6.1       wheel
+pytz                     2021.3    2022.5      wheel
+pyviz-comms              2.0.2     2.2.1       wheel
+PyWavelets               1.3.0     1.4.1       wheel
+pyzmq                    22.3.0    24.0.1      wheel
+QDarkStyle               3.0.2     3.1         wheel
+qstylizer                0.1.10    0.2.2       wheel
+QtAwesome                1.0.3     1.2.1       wheel
+qtconsole                5.3.0     5.3.2       wheel
+QtPy                     2.0.1     2.2.1       wheel
+queuelib                 1.5.0     1.6.2       wheel
+regex                    2022.3.15 2022.9.13   wheel
+requests                 2.27.1    2.28.1      wheel
+rope                     0.22.0    1.4.0       wheel
+rsa                      4.7.2     4.9         wheel
+Rtree                    0.9.7     1.0.1       wheel
+s3transfer               0.5.0     0.6.0       wheel
+scikit-image             0.19.2    0.19.3      sdist
+scikit-learn             1.0.2     1.1.3       sdist
+scipy                    1.7.3     1.9.3       sdist
+Scrapy                   2.6.1     2.7.0       wheel
+seaborn                  0.11.2    0.12.1      wheel
+service-identity         18.1.0    21.1.0      wheel
+setuptools               61.2.0    65.5.0      wheel
+sip                      6.5.1     6.7.3       wheel
+smart-open               5.1.0     6.2.0       wheel
+sniffio                  1.2.0     1.3.0       wheel
+soupsieve                2.3.1     2.3.2.post1 wheel
+Sphinx                   4.4.0     5.3.0       wheel
+spyder                   5.1.5     5.3.3       wheel
+spyder-kernels           2.1.3     2.3.3       wheel
+SQLAlchemy               1.4.32    1.4.42      sdist
+sqlparse                 0.4.2     0.4.3       wheel
+stack-data               0.2.0     0.5.1       wheel
+sympy                    1.10.1    1.11.1      wheel
+tabulate                 0.8.9     0.9.0       wheel
+tenacity                 8.0.1     8.1.0       wheel
+terminado                0.13.1    0.17.0      wheel
+testpath                 0.5.0     0.6.0       wheel
+textdistance             4.2.1     4.5.0       wheel
+threadpoolctl            2.2.0     3.1.0       wheel
+tifffile                 2021.7.2  2022.10.10  wheel
+tldextract               3.2.0     3.4.0       wheel
+tomli                    1.2.2     2.0.1       wheel
+toolz                    0.11.2    0.12.0      wheel
+torch                    1.11.0    1.13.0      wheel
+tornado                  6.1       6.2         wheel
+tqdm                     4.64.0    4.64.1      wheel
+traitlets                5.1.1     5.5.0       wheel
+Twisted                  22.2.0    22.8.0      wheel
+typed-ast                1.4.3     1.5.4       wheel
+typing_extensions        4.1.1     4.4.0       wheel
+ujson                    5.1.0     5.5.0       wheel
+Unidecode                1.2.0     1.3.6       wheel
+urllib3                  1.26.9    1.26.12     wheel
+w3lib                    1.21.0    2.0.1       wheel
+watchdog                 2.1.6     2.1.9       wheel
+websocket-client         0.58.0    1.4.1       wheel
+Werkzeug                 2.0.3     2.2.2       wheel
+widgetsnbextension       3.5.2     4.0.3       wheel
+wrapt                    1.12.1    1.14.1      wheel
+xarray                   0.20.1    2022.10.0   wheel
+xlwings                  0.24.6    0.28.3      wheel
+yapf                     0.31.0    0.32.0      wheel
+yarl                     1.6.3     1.8.1       wheel
+zict                     2.0.0     2.2.0       wheel
+zipp                     3.7.0     3.10.0      wheel
+zope.interface           5.4.0     5.5.0       sdist

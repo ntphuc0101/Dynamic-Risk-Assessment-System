@@ -1,42 +1,18 @@
-from flask import Flask, session, jsonify, request
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
-import numpy as np
 import pickle
 import os
-from sklearn import metrics
 import json
 import logging
 import sys
+from helper_function import preprocess_data, dataset_csv_path, model_path
 
-print("hello")
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 ###################Load config.json and get path variables
 with open('config.json','r') as f:
-    config = json.load(f) 
-
-dataset_csv_path = os.path.join(config['output_folder_path']) 
-model_path = os.path.join(config['output_model_path']) 
-
-def preprocess_data(df_frames, encoder):
-    df_y = df_frames["exited"]
-    df_x = df_frames.drop(["exited"], axis=1)
-
-    categorical_features = ["corporation"]
-    df_x_categorical = df_x[categorical_features].values
-    df_x_continuous = df_x.drop(*[categorical_features], axis=1)
-
-    if not encoder:
-        encoder = OneHotEncoder(sparse=False, handle_unknown="ignore")
-        df_x_categorical = encoder.fit_transform(df_x_categorical)
-    else:
-        df_x_categorical = encoder.transform(df_x_categorical)
-    df_x = np.concatenate([df_x_categorical, df_x_continuous], axis=1)
-
-    return df_x, df_y, encoder
+    config = json.load(f)
 
 #################Function for training the model
 def train_model():
@@ -59,7 +35,7 @@ def train_model():
     #fit the logistic regression to your data
     logging.info("Currently, Training model")
     model.fit(x_train, y_train)
-    print("Model score model in training dataset {0}"/
+    print("Model score model in training dataset {0}"
           .format(model.score(x_test, y_test)))
 
     #write the trained model to your workspace
