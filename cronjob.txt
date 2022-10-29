@@ -1,0 +1,1 @@
+*/1 * * * *  /Users/ntphuc/Downloads/Internview/MLOPs/cd0581-building-a-reproducible-model-workflow-exercises/Dynamic-Risk-Assessment-System/cronjob.sh >> /Users/ntphuc/Downloads/Internview/MLOPs/cd0581-building-a-reproducible-model-workflow-exercises/Dynamic-Risk-Assessment-System/cron.log
