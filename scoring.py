@@ -17,7 +17,8 @@ with open('config.json','r') as f:
     logging.info("Loading testdata.csv")
     dataset_csv_path = os.path.join(config['output_folder_path'])
     test_data_path = os.path.join(config['test_data_path'])
-    model_path = os.path.join(config['prod_deployment_path'])
+    # model_path = os.path.join(config['prod_deployment_path'])
+    model_path = os.path.join(config['output_model_path'])
     output_model_path = os.path.join(config['output_model_path'])
 
 #################Function for model scoring
@@ -33,12 +34,10 @@ def score_model():
     logging.info("Loading trained model")
     model = load(os.path.join(model_path,\
                               "trainedmodel.pkl"))
-    encoder = load(os.path.join(model_path,\
-                                "encoder.pkl"))
 
     df_frames = pd.read_csv(os.path.join(dataset_csv_path,\
                                          "finaldata.csv"))
-    df_x, df_y, _ = preprocess_data(df_frames, encoder)
+    df_x, df_y = preprocess_data(df_frames)
 
     logging.info("Predicting test data")
     y_pred = model.predict(df_x)

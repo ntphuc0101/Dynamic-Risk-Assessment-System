@@ -21,7 +21,7 @@ def train_model():
     split dataset and training, testing model
     """
     df_frames = pd.read_csv(os.path.join(dataset_csv_path, "finaldata.csv"))
-    df_x, df_y, encoder = preprocess_data(df_frames, None)
+    df_x, df_y = preprocess_data(df_frames)
 
     x_train, x_test, y_train, y_test = train_test_split(df_x, df_y, test_size=0.20)
     
@@ -45,7 +45,7 @@ def train_model():
         os.makedirs(model_path)
 
     pickle.dump(model, open(os.path.join(model_path, "trainedmodel.pkl"), 'wb'))
-    pickle.dump(encoder, open(os.path.join(model_path, "encoder.pkl"), 'wb'))
+    # pickle.dump(encoder, open(os.path.join(model_path, "encoder.pkl"), 'wb'))
 
 if __name__ == '__main__':
     logging.info("Running training.py")

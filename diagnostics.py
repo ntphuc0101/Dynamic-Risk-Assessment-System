@@ -19,22 +19,22 @@ test_data_path = os.path.join(config['test_data_path'])
 model_path = os.path.join(config['prod_deployment_path'])
 output_path = os.path.join(config['output_folder_path'])
 
-def preprocess_data(df_frames, encoder):
+def preprocess_data(df_frames):
+    """
+    Function for preproccessing data
+    Returns:
+        df_x : input dataframe
+        df_y : label data
+    """
     df_y = df_frames["exited"]
     df_x = df_frames.drop(["exited"], axis=1)
 
     categorical_features = ["corporation"]
-    df_x_categorical = df_x[categorical_features].values
     df_x_continuous = df_x.drop(*[categorical_features], axis=1)
 
-    if not encoder:
-        encoder = OneHotEncoder(sparse=False, handle_unknown="ignore")
-        df_x_categorical = encoder.fit_transform(df_x_categorical)
-    else:
-        df_x_categorical = encoder.transform(df_x_categorical)
-    df_x = np.concatenate([df_x_categorical, df_x_continuous], axis=1)
+    df_x = df_x_continuous
 
-    return df_x, df_y, encoder
+    return df_x, df_y
 
 def model_predictions(data_file):
     """
@@ -50,7 +50,6 @@ def model_predictions(data_file):
     #r
     logging.info("Loading deployed model")
     model = load(os.path.join(model_path, "trainedmodel.pkl"))
-    encoder = load(os.path.join(model_path, "encoder.pkl"))
 
     if data_file is None:
         dataset_path = os.path.join(test_data_path, "testdata.csv")
@@ -62,7 +61,7 @@ def model_predictions(data_file):
         dataset_path = os.path.join(test_data_path, data_file)
         df_frames = pd.read_csv(dataset_path)
 
-    df_x, df_y, _ = preprocess_data(df_frames, encoder)
+    df_x, df_y = preprocess_data(df_frames)
     logging.info("Running predictions on data")
     y_pred = model.predict(df_x)
     # return value should be a list containing all predictions

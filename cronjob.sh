@@ -14,4 +14,4 @@ source activate dynamic_risk
 
 echo Processing runnning
 
-python ./fullprocess.py
+python /Users/ntphuc/Downloads/Internview/MLOPs/cd0581-building-a-reproducible-model-workflow-exercises/Dynamic-Risk-Assessment-System/fullprocess.py
